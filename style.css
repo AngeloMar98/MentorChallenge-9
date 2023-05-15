@@ -13,7 +13,7 @@ body {
   font-weight: 500;
   font-size: 1.5rem;
   color: hsl(219, 14%, 63%);
-  background-color: hsl(211, 68%, 94%);
+  background-color: hsla(211, 68%, 94%, 0.35);
 }
 
 a:link,
@@ -36,6 +36,7 @@ a:active {
   margin: 4rem auto;
   padding: 2.6rem;
 
+  box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.025);
   background-color: hsl(0, 0%, 100%);
   border-radius: 14px;
 }
@@ -79,7 +80,7 @@ a:active {
 /* NOTIFICATION BUBBLE */
 
 .new {
-  background-color: hsl(211, 68%, 94%);
+  background-color: hsla(211, 68%, 94%, 0.35);
 }
 
 .notification {
@@ -140,7 +141,7 @@ a:active {
 }
 
 blockquote {
-  border: solid 1px hsl(205, 33%, 90%);
+  border: solid 1px hsla(211, 68%, 94%, 0.47);
   color: hsl(219, 12%, 42%);
   padding: 1.2rem;
   border-radius: 6px;
@@ -148,7 +149,7 @@ blockquote {
 }
 
 blockquote:hover {
-  background-color: hsl(205, 33%, 90%);
+  background-color: hsla(211, 68%, 94%, 0.47);
   cursor: pointer;
 }
 
