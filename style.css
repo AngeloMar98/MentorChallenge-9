@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: hsl(219, 14%, 63%);
+  background-color: hsl(211, 68%, 94%);
+}
+
+a:link,
+a:visited {
+  cursor: pointer;
+  font-weight: 800;
+  text-decoration: none;
+  color: hsl(219, 12%, 42%);
+  margin-right: 0.4rem;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:active {
+  color: hsl(219, 85%, 26%) !important;
+}
+
+.notif-board {
+  width: 70rem;
+  margin: 4rem auto;
+  padding: 2.6rem;
+
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 14px;
+}
+
+/* NOTIFICATION BAR */
+
+.notif-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.2rem;
+}
+
+.notif-title {
+  color: hsl(224, 21%, 14%);
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.notif-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  margin-left: 0.4rem;
+  border-radius: 6px;
+  color: #fff;
+  background-color: hsl(219, 85%, 26%);
+}
+
+.notif-clear:hover,
+.notif-clear:active {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+/* NOTIFICATION BUBBLE */
+
+.new {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.notification {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  gap: 0.8rem;
+  padding: 1.4rem;
+  border-radius: 8px;
+  transition: all 0.1s;
+}
+
+/* IN CASE IMAGE IS PRESENT, ADDITIONAL CLASS */
+
+.notification.img-notif {
+  grid-template-columns: 5rem auto 4rem;
+}
+
+.notification:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
+.notif-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.new .notif-container .notif-content::after {
+  display: inline-block;
+  content: "";
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+  width: 0.2rem;
+  height: 0.2rem;
+  padding: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-left: 0.4rem;
+}
+
+.notif-img {
+  border-radius: 10px;
+  max-height: 4rem;
+  max-width: 4rem;
+  transition: all 0.3s;
+}
+
+.notif-img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 4px hsl(211, 68%, 94%);
+}
+
+.notif-pfp {
+  width: 4.4rem;
+}
+
+.user-name {
+  color: hsl(224, 21%, 14%) !important;
+}
+
+blockquote {
+  border: solid 1px hsl(205, 33%, 90%);
+  color: hsl(219, 12%, 42%);
+  padding: 1.2rem;
+  border-radius: 6px;
+  margin-top: 0.8rem;
+}
+
+blockquote:hover {
+  background-color: hsl(205, 33%, 90%);
+  cursor: pointer;
+}
+
+@media (max-width: 48em) {
+  .notif-board {
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .notif-board {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .notif-board {
+    padding: 2rem;
+  }
+  html {
+    font-size: 52.5%;
+  }
+}
